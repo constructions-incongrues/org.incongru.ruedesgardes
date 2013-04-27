@@ -1,0 +1,10 @@
+# ides
+*.bak
+*.swp
+*~
+
+# wordpress
+/src/wordpress/wp-content/uploads/*
+
+# composer
+/vendor/*
