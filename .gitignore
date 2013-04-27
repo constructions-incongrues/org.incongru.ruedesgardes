@@ -11,3 +11,6 @@
 
 # dist
 /src/wordpress/wp-config.php
+
+# abt
+/etc
