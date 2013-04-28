@@ -1,0 +1,20 @@
+/*
+Theme Name:     tdSimple Child (ruedesgardes.incongru.org)
+Theme URI:      http://github.com/constructions-incongrues/org.incongru.ruedesgardes
+Description:    Theme of the http://ruedesgardes.incongru.org website
+Author:         Constructions Incongrues
+Author URI:     http://github.com/constructions-incongrues
+Template:       tdsimple                             
+*/
+
+/* Import styles from parent theme */
+@import url("../tdsimple/css/refineslide.css");
+@import url("../tdsimple/css/general_foundicons_ie7.css");
+@import url("../tdsimple/css/css/general_foundicons.css");
+@import url("../tdsimple/css/css/css/foundation.min.css");
+@import url("../tdsimple/style.css");
+
+/* Hide some elements */
+.nav-bar, .page-title {
+	display:none;
+}
