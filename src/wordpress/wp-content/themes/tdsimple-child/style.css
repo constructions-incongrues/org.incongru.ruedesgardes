@@ -56,8 +56,7 @@ h2.site-description { background-color: #ACACAC, color:#fff; }
 h4.assistive-text { margin: 0; }
 input.input-text.qty.text { margin-bottom: 0; }
 div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
-li.products img {border:2px solid #000;}
+
 /* Paint new elements */
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
 hr.narrow { margin-top: 5px; padding-top: 5px; }
-
