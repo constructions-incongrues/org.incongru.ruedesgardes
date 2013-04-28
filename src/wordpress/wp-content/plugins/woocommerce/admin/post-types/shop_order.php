@@ -323,7 +323,7 @@ function woocommerce_restrict_manage_orders() {
 		    data:		{
 		    	action: 	'woocommerce_json_search_customers',
 				security: 	'" . wp_create_nonce("search-customers") . "',
-				default:	'" . __( 'Show all customers', 'woocommerce' ) . "'
+				default:	'" . esc_js(__( 'Show all customers', 'woocommerce' )) . "'
 		    }
 		}, function (data) {
 
