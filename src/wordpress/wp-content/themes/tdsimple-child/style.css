@@ -28,9 +28,8 @@ Template:       tdsimple
 body {background-image: url(img/pat4.png) !important;
 background-repeat: repeat !important;}
 /* Setup fonts */
-h1 { font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;
-font-size:6em;letter-spacing: 3px; }
-h2.site-description {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;}
+h1, h2.site-description { font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif; }
+h1 { text-transform: uppercase; font-size: 6em ;letter-spacing: 3px; }
 p,ul,h1.product_title { font-family: 'Ubuntu', Georgia, Times, serif; }
 
 /* Hide some elements */
@@ -61,7 +60,3 @@ div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
 /* Paint new elements */
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
 hr.narrow { margin-top: 5px; padding-top: 5px; }
-.price {color: #FF0099!important}
-.nav-bar {text-transform: uppercase;font-weight: lighter;}
-.nav-bar li a {color: #0099FF!important}
-.products img  {border: 1px solid #BBB!important}
