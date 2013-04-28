@@ -21,8 +21,8 @@ EOT;
 add_action('wp_enqueue_scripts', function() {
 	// Register fonts stylesheets
 	wp_register_style(
-		'font-ubuntu',
-		'http://fonts.googleapis.com/css?family=Ubuntu:bold',
+		'font-carrois',
+		'http://fonts.googleapis.com/css?family=Carrois+Gothic+SC',
 		array(),
 		date('Ymd'),
 		'all'
@@ -36,7 +36,7 @@ add_action('wp_enqueue_scripts', function() {
 	);
 
 	// Enqueue registered styles
-	wp_enqueue_style('font-ubuntu');
+	wp_enqueue_style('font-carrois');
 	wp_enqueue_style('font-vollkorn');
 });
 

@@ -28,8 +28,11 @@ Template:       tdsimple
     font-weight: normal;
     font-style: normal;
 }
-body {background-color: #f8f8f8!important;
-    background-repeat: repeat !important;}
+body {background-color: #f9f9f9!important;
+    background-repeat: repeat !important;
+font-family: 'Carrois Gothic SC', sans-serif;
+}
+
 header {
     background-image: url(img/pat7.png) !important;
     background-repeat: repeat !important;
@@ -64,7 +67,7 @@ h2.site-description {
 }
 
 p,ul,h1.product_title,h3 {
-    font-family: 'Ubuntu', Georgia, Times, serif;
+font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 /* Hide some elements */
@@ -124,7 +127,9 @@ div.brand {
 .site-header {
     width: 100%!important;
 }
-div.images {margin-left: -32px !important;}
+div.images {margin-left: -32px !important;
+border:1px solid #bbb!important;}
+
 /* Paint new elements */
 .summary .contact {
     font-size: 0.7em;
@@ -157,14 +162,19 @@ hr.narrow {
 
 .products img {
     border: 1px solid #BBB!important;
+      filter: grayscale(30%);
+    -webkit-filter: grayscale(30%);
+    -moz-filter: grayscale(30%);
+    -ms-filter: grayscale(30%);
+    -o-filter: grayscale(30%);
 }
 
 .products img:hover{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
 }
-li.product h3  {color:#777;font-weight: lighter!important;}
+li.product h3  {color:#000;font-weight: lighter!important;}
 
