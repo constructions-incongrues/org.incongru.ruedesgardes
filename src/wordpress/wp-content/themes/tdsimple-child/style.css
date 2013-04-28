@@ -30,7 +30,9 @@ background-repeat: repeat !important;}
 /* Setup fonts */
 h1 { font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;
 font-size:6em;letter-spacing: 3px; }
-h2.site-description {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;}
+h1.site-title {margin-top: -60px!important;text-align: left;}
+h2.site-description {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif!important;text-transform: uppercase;
+font-weight: bold!important;font-size: 3em!important;margin-top: 60px!important;text-align: left;color: #FF0099!important;}
 p,ul,h1.product_title { font-family: 'Ubuntu', Georgia, Times, serif; }
 
 /* Hide some elements */
@@ -62,6 +64,6 @@ div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
 hr.narrow { margin-top: 5px; padding-top: 5px; }
 .price {color: #FF0099!important}
-.nav-bar {text-transform: uppercase;font-weight: lighter;}
+.nav-bar {text-transform: uppercase;font-weight: lighter;text-align: left;}
 .nav-bar li a {color: #0099FF!important}
 .products img  {border: 1px solid #BBB!important}
