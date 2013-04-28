@@ -64,6 +64,6 @@ div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
 hr.narrow { margin-top: 5px; padding-top: 5px; }
 .price {color: #FF0099!important}
-.nav-bar {text-transform: uppercase;font-weight: lighter;text-align: left;}
+.nav-bar {text-transform: uppercase;font-weight: lighter;}
 .nav-bar li a {color: #0099FF!important}
 .products img  {border: 1px solid #BBB!important}

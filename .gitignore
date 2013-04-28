@@ -3,6 +3,13 @@
 *.swp
 *~
 
+# git
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*.orig
+
 # wordpress
 /src/wordpress/wp-content/uploads/*
 
