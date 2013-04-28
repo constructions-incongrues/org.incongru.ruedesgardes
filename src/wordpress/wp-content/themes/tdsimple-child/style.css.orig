@@ -25,13 +25,16 @@ Template:       tdsimple
     font-style: normal;
 }
 
-body {background-image: url(img/pat4.png) !important;
+body {background-image: url(img/pat3.png) !important;
 background-repeat: repeat !important;}
 /* Setup fonts */
+<<<<<<< HEAD
 h1 { font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;
 font-size:6em;letter-spacing: 3px; }
-h2.site-description {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;}
-p,ul,h1.product_title { font-family: 'Ubuntu', Georgia, Times, serif; }
+=======
+h1,h2.site-description { font-family: 'Ubuntu', Helvetica, Arial, sans-serif !important; }
+>>>>>>> b25cc90caaeec5dd80dac55b8a3a90694675b6ed
+p,ul,h1.product_title { font-family: 'Vollkorn', Georgia, Times, serif; }
 
 /* Hide some elements */
 .add_to_cart_button, 
@@ -57,11 +60,14 @@ h2.site-description { background-color: #ACACAC, color:#fff; }
 h4.assistive-text { margin: 0; }
 input.input-text.qty.text { margin-bottom: 0; }
 div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
+<<<<<<< HEAD
+li.products img {border:2px solid #000;}
+=======
+.products h3 { font-size: 0.8em !important; text-align: center; }
+.products .price { text-align: center; }
 
+>>>>>>> b25cc90caaeec5dd80dac55b8a3a90694675b6ed
 /* Paint new elements */
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
 hr.narrow { margin-top: 5px; padding-top: 5px; }
-.price {color: #FF0099!important}
-.nav-bar {text-transform: uppercase;font-weight: lighter;}
-.nav-bar li a {color: #0099FF!important}
-.products img  {border: 1px solid #BBB!important}
+
