@@ -11,6 +11,9 @@
 
 # dist
 /src/wordpress/wp-config.php
+/src/wordpress/.htaccess
 
 # abt
 /etc
+!/etc/common
+!/etc/trivoallan
