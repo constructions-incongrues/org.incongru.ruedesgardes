@@ -26,12 +26,15 @@
 <div id="page" class="hfeed site">
 	<?php do_action( 'tdsimple_before_header' ); ?>
 	<header id="masthead" class="site-header row" role="banner">
-		<div class="twelve columns brand">
+		
+		<div class="header-content">
+			<div class="twelve columns brand">
 			<hgroup>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 								<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 			</hgroup>
+	
 		</div>
 			
 		<div class="twelve columns">
@@ -49,6 +52,7 @@
 				<?php } ?>
 			</nav><!-- .site-navigation .main-navigation -->
 		</div>
+			</div>
 	</header><!-- #masthead .site-header -->
 
 
