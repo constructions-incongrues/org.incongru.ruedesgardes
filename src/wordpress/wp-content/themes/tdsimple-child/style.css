@@ -60,7 +60,9 @@ p,ul,h1.product_title { font-family: 'Ubuntu', Georgia, Times, serif; }
 .price {color: #FF0099!important}
 .nav-bar {text-transform: uppercase;font-weight: lighter;text-align: left;}
 .nav-bar li a {color: #0099FF!important}
-.products img  {border: 1px solid #BBB!important}
+.products img  { border: 1px solid #BBB!important; }
+.products h3 { text-align: center; font-size: 0.8em !important; }
+.products .price { text-align: center; }
 
 /* Paint new elements */
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
