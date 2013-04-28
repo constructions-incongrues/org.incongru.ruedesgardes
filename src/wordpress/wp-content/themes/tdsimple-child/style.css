@@ -34,13 +34,14 @@ p,ul,h1.product_title { font-family: 'Vollkorn', Georgia, Times, serif; }
 }
 
 /* Perform some adjustments */
-.entry-summary { margin-top: -0.3em; }
-.main-navigation { margin-bottom: 0; }
+.main-navigation { margin-bottom: 0; border: none; }
+.entry-summary { margin-top: -0.1em; }
 .summary p.price { margin-bottom: 0; }
 h1.product_title { font-size: 1em; }
 h2.site-description { background-color: #ACACAC, color:#fff; }
 h4.assistive-text { margin: 0; }
 input.input-text.qty.text { margin-bottom: 0; }
+div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
 
 /* Paint new elements */
 .summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
