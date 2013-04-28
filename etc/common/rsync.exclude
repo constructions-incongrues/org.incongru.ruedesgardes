@@ -7,5 +7,6 @@
 /composer*
 /build.xml
 /src/wordpress/wp-content/uploads
-/src/wordpress/wp-consrc/wordpress/wp-content/plugins/woocommerce/logs/*
+/src/wordpress/wp-content/upgrade
+/src/wordpress/wp-content/plugins/woocommerce/logs/*
 /etc
