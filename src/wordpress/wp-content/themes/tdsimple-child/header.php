@@ -51,6 +51,5 @@
 		</div>
 	</header><!-- #masthead .site-header -->
 
-	<hr class="narrow" />
 
 	<div id="main" class="site-main row">
