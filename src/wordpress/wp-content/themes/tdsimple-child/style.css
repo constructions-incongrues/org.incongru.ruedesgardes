@@ -25,16 +25,7 @@ Template:       tdsimple
     font-style: normal;
 }
 
-header {background-image: url(img/pat4.png) !important;
-background-repeat: repeat !important;}
 /* Setup fonts */
-h1 { font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;
-font-size:6em;letter-spacing: 3px; }
-
-h1.site-title {margin-top: -60px!important;margin-left:-20px;text-align: left;}
-h2.site-description {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif!important;text-transform: uppercase;
-font-weight: bold!important;font-size: 3em!important;margin-top: 20px!important;margin-left:-19px;text-align: left;}
-p,ul,h1.product_title { font-family: 'Ubuntu', Georgia, Times, serif; }
 
 /* Hide some elements */
 .add_to_cart_button, 
@@ -60,11 +51,17 @@ h2.site-description { background-color: #ACACAC, color:#fff; }
 h4.assistive-text { margin: 0; }
 input.input-text.qty.text { margin-bottom: 0; }
 div.brand { margin-top: 0 !important; margin-bottom: 0 !important; }
-.site-header { width: 100%!important}
-/* Paint new elements */
-.summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
-hr.narrow { margin-top: 5px; padding-top: 5px; }
+.site-header { width: 100%!important }
+header { background-image: url(img/pat4.png) !important; background-repeat: repeat !important; }
+h1 { font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase; font-size:6em;letter-spacing: 3px; }
+h1.site-title {margin-top: -60px!important;margin-left:-20px;text-align: left;}
+h2.site-description {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif!important;text-transform: uppercase; font-weight: bold!important;font-size: 3em!important;margin-top: 20px!important;margin-left:-19px;text-align: left;}
+p,ul,h1.product_title { font-family: 'Ubuntu', Georgia, Times, serif; }
 .price {color: #FF0099!important}
 .nav-bar {text-transform: uppercase;font-weight: lighter;text-align: left;}
 .nav-bar li a {color: #0099FF!important}
 .products img  {border: 1px solid #BBB!important}
+
+/* Paint new elements */
+.summary .contact { font-size: 0.7em; padding-bottom: 0; margin-bottom: 0; }
+hr.narrow { margin-top: 5px; padding-top: 5px; }
