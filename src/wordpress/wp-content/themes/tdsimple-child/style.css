@@ -87,9 +87,9 @@ font-family: 'Carrois Gothic SC', sans-serif;
 
 /* Perform some adjustments */
 
-.site-info {text-align: left!important;margin-left: -18px;}
+.site-info {text-align: left!important;margin-left: -18px;text-transform: lowercase;}
 .site-info p {font-size: 0.9em!important;line-height: 0px!important;color: #888!important}
-.site-info p a {    color: #777!important;}
+.site-info p a {    color: #777!important;border-bottom: 1px dotted #999}
 .main-navigation {
     margin-bottom: 0;
     border: none;
@@ -127,9 +127,8 @@ div.brand {
 .site-header {
     width: 100%!important;
 }
-div.images {margin-left: -32px !important;
-border:1px solid #bbb!important;}
-
+div.images {margin-left: -32px !important;}
+.wp-post-image {border:1px solid #bbb!important;}
 /* Paint new elements */
 .summary .contact {
     font-size: 0.7em;
@@ -162,11 +161,11 @@ hr.narrow {
 
 .products img {
     border: 1px solid #BBB!important;
-      filter: grayscale(30%);
-    -webkit-filter: grayscale(30%);
-    -moz-filter: grayscale(30%);
-    -ms-filter: grayscale(30%);
-    -o-filter: grayscale(30%);
+      filter: grayscale(45%);
+    -webkit-filter: grayscale(45%);
+    -moz-filter: grayscale(45%);
+    -ms-filter: grayscale(45%);
+    -o-filter: grayscale(45%);
 }
 
 .products img:hover{
