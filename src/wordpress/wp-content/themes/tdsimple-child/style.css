@@ -28,34 +28,34 @@ Template:       tdsimple
     font-weight: normal;
     font-style: normal;
 }
-body {background-color: #f9f9f9!important;
+body {background-color: #fff!important;
     background-repeat: repeat !important;
 font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 header {
-    background-image: url(img/pat7.png) !important;
+    background-image: url(img/pat8.png) !important;
     background-repeat: repeat !important;
-    border-bottom: 1px dotted #bbb;
+    border-bottom: 5px solid #000;
     margin-bottom: 40px!important;
 }
-.header-content {width:960px!important;text-align: left;margin:0 auto;}
+.header-content {width:960px!important;text-align: left;margin:0 auto;height:200px!important;}
 /* Setup fonts */
 h1 {
     font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 6em;h2.site-description 
+    font-size: 4em;
     letter-spacing: 3px;
+    position:relative;
 }
 
 h1.site-title {
-    margin-top: -60px!important;
     margin-left: -10px;
     margin-bottom: -20px;
 }
 
-/*h1.site-title a {}
-*/
+h1.site-title a {color:#FFF!important;background-color: #000!important;padding:4px 8px 0px 8px;}
+
 h2.site-description {
     font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif!important;
     text-transform: uppercase;
@@ -87,13 +87,16 @@ font-family: 'Carrois Gothic SC', sans-serif;
 
 /* Perform some adjustments */
 
-.site-info {text-align: left!important;margin-left: -18px;text-transform: lowercase;}
+.site-info {text-align: left!important;margin-left: -18px;text-transform: lowercase!important;}
 .site-info p {font-size: 0.9em!important;line-height: 0px!important;color: #888!important}
 .site-info p a {    color: #777!important;border-bottom: 1px dotted #999}
+.stock {color:#000!important;}
+a {color:#d52b2b!important;}
 .main-navigation {
     margin-bottom: 0;
     border: none;
 }
+
 
 .entry-summary {
     margin-top: -0.1em;
@@ -128,7 +131,8 @@ div.brand {
     width: 100%!important;
 }
 div.images {margin-left: -32px !important;}
-.wp-post-image {border:1px solid #bbb!important;}
+.wp-post-image,ul.products li.product a img {border:1px solid #000!important;box-shadow: none!important;}
+
 /* Paint new elements */
 .summary .contact {
     font-size: 0.7em;
@@ -142,7 +146,8 @@ hr.narrow {
 }
 
 .price {
-    color: #2389ce!important;
+    color: #d52b2b!important;
+
 }
 
 .nav-bar {
@@ -151,12 +156,13 @@ hr.narrow {
     font-weight: lighter;
     text-align: left!important;
     margin-left: -10px!important;
-    margin-top: -20px!important;
+    margin-top:20px!important;
 }
 
-.nav-bar>li>a:first-child {padding: 5px;}
 .nav-bar li a {
-    color: #2389ce!important;
+    color: #000!important;
+    background-color: #FFF!important;
+    padding: 4px!important;
 }
 
 .products img {
