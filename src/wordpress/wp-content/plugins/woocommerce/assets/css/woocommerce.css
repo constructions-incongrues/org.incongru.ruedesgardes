@@ -6,8 +6,6 @@
     white-space: nowrap;
 };
 
-font-weight:normal;font-style:normal;
-}
 
 .woocommerce-message,.woocommerce-error,.woocommerce-info {
 padding: 1em 1em 1em 3.5em;
@@ -187,6 +185,7 @@ padding: 0;
 .woocommerce div.product span.price,.woocommerce-page div.product span.price,.woocommerce #content div.product span.price,.woocommerce-page #content div.product span.price,.woocommerce div.product p.price,.woocommerce-page div.product p.price,.woocommerce #content div.product p.price,.woocommerce-page #content div.product p.price {
 color: #85ad74;
 font-size: 1.25em;
+text-transform: lowercase;
 }
 
 .woocommerce div.product span.price ins,.woocommerce-page div.product span.price ins,.woocommerce #content div.product span.price ins,.woocommerce-page #content div.product span.price ins,.woocommerce div.product p.price ins,.woocommerce-page div.product p.price ins,.woocommerce #content div.product p.price ins,.woocommerce-page #content div.product p.price ins {
@@ -589,7 +588,7 @@ background: 0;
 .woocommerce ul.products li.product .price .from,.woocommerce-page ul.products li.product .price .from {
 font-size: .67em;
 margin: -2px 0 0 0;
-text-transform: uppercase;
+text-transform: lowercase;
 color: rgba(145,145,145,0.5);
 }
 
@@ -745,28 +744,16 @@ display: none;
 
 .woocommerce .quantity input.qty,.woocommerce-page .quantity input.qty,.woocommerce #content .quantity input.qty,.woocommerce-page #content .quantity input.qty {
 width: 40px;
-height: 28px;
+height: 36px;
 float: left;
 padding: 0;
 text-align: center;
 border: 1px solid #c8bfc6;
 border-right: 0;
--webkit-border-top-right-radius: 0;
--webkit-border-bottom-right-radius: 0;
--moz-border-radius-topright: 0;
--moz-border-radius-bottomright: 0;
-border-top-right-radius: 0;
-border-bottom-right-radius: 0;
-box-shadow: inset 0 0 2px 0 #f7f6f7;
--webkit-box-shadow: inset 0 0 2px 0 #f7f6f7;
--moz-box-shadow: inset 0 0 2px 0 #f7f6f7;
+
+
 font-weight: bold;
--webkit-border-top-left-radius: 2px;
--webkit-border-bottom-left-radius: 2px;
--moz-border-radius-topleft: 2px;
--moz-border-radius-bottomleft: 2px;
-border-top-left-radius: 2px;
-border-bottom-left-radius: 2px;
+
 }
 
 .woocommerce .quantity noindex:-o-prefocus,.woocommerce-page .quantity noindex:-o-prefocus,.woocommerce #content .quantity noindex:-o-prefocus,.woocommerce-page #content .quantity noindex:-o-prefocus,.woocommerce .quantity input[type=number],.woocommerce-page .quantity input[type=number],.woocommerce #content .quantity input[type=number],.woocommerce-page #content .quantity input[type=number] {
@@ -1737,7 +1724,7 @@ clear: both;
 .woocommerce .order_details li,.woocommerce-page .order_details li {
 float: left;
 margin-right: 2em;
-text-transform: uppercase;
+text-transform: lowercase;
 font-size: .715em;
 line-height: 1em;
 border-right: 1px dashed #e0dadf;

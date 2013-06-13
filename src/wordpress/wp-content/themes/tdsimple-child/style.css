@@ -31,6 +31,7 @@ Template:       tdsimple
 body {background-color: #fff!important;
     background-repeat: repeat !important;
 font-family: 'Carrois Gothic SC', sans-serif;
+
 }
 
 header {
@@ -68,7 +69,7 @@ h2.site-description {
 
 p,ul,h1.product_title,h3 {
 font-family: 'Carrois Gothic SC', sans-serif;
-}
+text-transform: lowercase;}
 
 /* Hide some elements */
 .add_to_cart_button, 
@@ -165,21 +166,6 @@ hr.narrow {
     padding: 4px!important;
 }
 
-.products img {
-    border: 1px solid #BBB!important;
-      filter: grayscale(45%);
-    -webkit-filter: grayscale(45%);
-    -moz-filter: grayscale(45%);
-    -ms-filter: grayscale(45%);
-    -o-filter: grayscale(45%);
-}
 
-.products img:hover{
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-}
 li.product h3  {color:#000;font-weight: lighter!important;}
 
