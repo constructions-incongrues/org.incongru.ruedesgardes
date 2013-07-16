@@ -42,7 +42,10 @@ header {
 }
 .header-content {width:960px!important;text-align: left;margin:0 auto;height:200px!important;}
 /* Setup fonts */
-h1 {
+
+h1, h2, h3, h4, h5, h6, .entry-title a,
+.site-content .site-navigation a,
+.wp-caption {
     font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 4em;
@@ -56,7 +59,7 @@ h1.site-title {
 }
 
 h1.site-title a {color:#FFF!important;background-color: #000!important;padding:4px 8px 0px 8px;}
-
+h1.site-title a:hover {color:#000!important;background-color: #FFF !important;}
 h2.site-description {
     font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif!important;
     text-transform: uppercase;
@@ -91,8 +94,10 @@ text-transform: lowercase;}
 .site-info {text-align: left!important;margin-left: -18px;text-transform: lowercase!important;}
 .site-info p {font-size: 0.9em!important;line-height: 0px!important;color: #888!important}
 .site-info p a {    color: #777!important;border-bottom: 1px dotted #999}
+.site-info p a:hover {border-bottom: 1px dotted #000!important;color:#000!important;}
 .stock {color:#000!important;}
-a {color:#d52b2b!important;}
+div#content a {color:#d52b2b!important;}
+div#content a:hover {border-bottom: 1px dotted #D52b2b!important;}
 .main-navigation {
     margin-bottom: 0;
     border: none;
@@ -163,9 +168,71 @@ hr.narrow {
 .nav-bar li a {
     color: #000!important;
     background-color: #FFF!important;
-    padding: 4px!important;
+    padding: 0px 6px 0px 6px!important;
 }
 
-
+.nav-bar li a:hover 
+{
+    color: #FFF!important;
+    background-color: #000!important;
+}
 li.product h3  {color:#000;font-weight: lighter!important;}
 
+/* bandcamp */
+
+#maintext, #subtext, #linkarea{visibility:hidden!important;}
+#tracklist {top:120px!important;}
+#buyordownload {display: none!important;visibility: hidden!important;}
+
+/* woocomerce */
+
+input#submit-comment,.woocommerce a.button.alt,.woocommerce-page a.button.alt,.woocommerce button.button.alt,.woocommerce-page button.button.alt,.woocommerce input.button.alt,.woocommerce-page input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce-page #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page #content input.button.alt {
+    background: #D52B2B;
+    background: -webkit-gradient(linear,left top,left bottom,from(#D52B2B),to(#D));
+    background: -webkit-linear-gradient(#D52B2B,#D);
+    background: -moz-linear-gradient(center top,#D52B2B 0,#D 100%);
+    background: -moz-gradient(center top,#D52B2B 0,#D 100%);
+    border-color: #76456c;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6) }
+ 
+input#submit-comment:hover,a.button:hover,.woocommerce a.button.alt:hover,.woocommerce-page a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce-page button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce-page input.button.alt:hover,.woocommerce #respond input#submit.alt:hover,.woocommerce-page #respond input#submit.alt:hover,.woocommerce #content input.button.alt:hover,.woocommerce-page #content input.button.alt:hover {
+    background: #000;
+    background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
+    background: -webkit-linear-gradient(#000,#000);
+    background: -moz-linear-gradient(center top,#000 0,#000 100%);
+    background: -moz-gradient(center top,#000 0,#000 100%);
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.6) }
+
+div.woocommerce-message, .woocommerce-info
+{border-top: 3px solid #D52B2B!important;}
+
+
+a.shipping-calculator-button {font-size: 0.5em;}
+div.cart_totals h2 {font-size: 2.5em;}
+div#customer_details.col2-set h3 {font-size: 1.5em;}
+ /* autres */
+ .foundicon-plus {
+  color:#D52B2B;
+}
+.foundicon-minus {color:#FFF;}
+.widget a {color:#FFF!important;}
+.woocommerce-message:before,.woocommerce-info:before {display: none!important;}
+
+/* Small menu */
+.menu-toggle {
+    cursor: pointer;
+    background: #FFF;
+    color: #000;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    position: relative;
+    left: -6px;
+    top: 40px!important;
+    margin-bottom: -20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: inline;
+}
