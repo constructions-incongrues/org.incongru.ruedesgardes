@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6, .entry-title a,
 .wp-caption {
     font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 2em;
     letter-spacing: 3px;
     position:relative;
 }
@@ -56,6 +56,8 @@ h1, h2, h3, h4, h5, h6, .entry-title a,
 h1.site-title {
     margin-left: -10px;
     margin-bottom: -20px;
+        font-size: 4em;
+
 }
 
 h1.site-title a {color:#FFF!important;background-color: #000!important;padding:4px 8px 0px 8px;}
@@ -187,33 +189,32 @@ li.product h3  {color:#000;font-weight: lighter!important;}
 /* woocomerce */
 
 input#submit-comment,.woocommerce a.button.alt,.woocommerce-page a.button.alt,.woocommerce button.button.alt,.woocommerce-page button.button.alt,.woocommerce input.button.alt,.woocommerce-page input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce-page #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page #content input.button.alt {
-    background: #D52B2B;
-    background: -webkit-gradient(linear,left top,left bottom,from(#D52B2B),to(#D));
-    background: -webkit-linear-gradient(#D52B2B,#D);
-    background: -moz-linear-gradient(center top,#D52B2B 0,#D 100%);
-    background: -moz-gradient(center top,#D52B2B 0,#D 100%);
-    border-color: #76456c;
-    color: #fff;
+    background: #D52B2B!important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#D52B2B),to(#D52B2B))!important;
+    background: -webkit-linear-gradient(#D52B2B,#D52B2B)!important;
+    background: -moz-linear-gradient(center top,#D52B2B 0,#D52B2B 100%)!important;
+    background: -moz-gradient(center top,#D52B2B 0,#D52B2B 100%)!important;
+    border-color: #76456c!important;
+    color: #fff!important;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.6) }
  
 input#submit-comment:hover,a.button:hover,.woocommerce a.button.alt:hover,.woocommerce-page a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce-page button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce-page input.button.alt:hover,.woocommerce #respond input#submit.alt:hover,.woocommerce-page #respond input#submit.alt:hover,.woocommerce #content input.button.alt:hover,.woocommerce-page #content input.button.alt:hover {
-    background: #000;
-    background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
-    background: -webkit-linear-gradient(#000,#000);
-    background: -moz-linear-gradient(center top,#000 0,#000 100%);
-    background: -moz-gradient(center top,#000 0,#000 100%);
-    color: #fff;
+    background: #000!important;
+    background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000))!important;
+    background: -webkit-linear-gradient(#000,#000)!important;
+    background: -moz-linear-gradient(center top,#000 0,#000 100%)!important;
+    background: -moz-gradient(center top,#000 0,#000 100%)!important;
+    color: #fff!important;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.6) }
 
 div.woocommerce-message, .woocommerce-info
 {border-top: 3px solid #D52B2B!important;}
 
 
-a.shipping-calculator-button {font-size: 0.5em;}
+a.shipping-calculator-button {font-size: 1em;}
 div.cart_totals h2 {font-size: 2.5em;}
 div#customer_details.col2-set h3 {font-size: 1.5em;}
 .woocommerce table.cart a.remove:hover,.woocommerce-page table.cart a.remove:hover,.woocommerce #content table.cart a.remove:hover,.woocommerce-page #content table.cart a.remove:hover { background-color:#000!important;color: #fff }
-.woocommerce .checkout #shiptobilling, .woocommerce-page .checkout #shiptobilling {float:left!important;}
 
  /* autres */
  .foundicon-plus {
@@ -221,7 +222,7 @@ div#customer_details.col2-set h3 {font-size: 1.5em;}
 }
 .foundicon-minus {color:#FFF;}
 .widget a {color:#FFF!important;}
-.woocommerce-message:before,.woocommerce-info:before {display: none!important;}
+.woocommerce-message:before,.woocommerce-info:before, .woocommerce-error:before {display: none!important;}
 
 /* Small menu */
 .menu-toggle {
