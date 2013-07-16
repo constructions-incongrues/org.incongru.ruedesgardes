@@ -35,9 +35,29 @@ add_action('wp_enqueue_scripts', function() {
 		'all'
 	);
 
+	wp_register_style(
+		'ruedesgardes',
+		'css/ruedesgardes.css',
+		array(
+			'admin-bar',
+			'font-carrois', 
+			'font-vollkorn', 
+			'googlefonts', 
+			'slider', 
+			'icons-ie', 
+			'icons', 
+			'foundation',
+			'style',
+			'woocommerce_frontend_styles'
+		),
+		date('Ymd'),
+		'all'
+	);
+
 	// Enqueue registered styles
 	wp_enqueue_style('font-carrois');
 	wp_enqueue_style('font-vollkorn');
+	wp_enqueue_style('ruedesgardes');
 });
 
 /**
