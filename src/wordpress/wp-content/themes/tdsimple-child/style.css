@@ -212,6 +212,9 @@ div.woocommerce-message, .woocommerce-info
 a.shipping-calculator-button {font-size: 0.5em;}
 div.cart_totals h2 {font-size: 2.5em;}
 div#customer_details.col2-set h3 {font-size: 1.5em;}
+.woocommerce table.cart a.remove:hover,.woocommerce-page table.cart a.remove:hover,.woocommerce #content table.cart a.remove:hover,.woocommerce-page #content table.cart a.remove:hover { background-color:#000!important;color: #fff }
+.woocommerce .checkout #shiptobilling, .woocommerce-page .checkout #shiptobilling {float:left!important;}
+
  /* autres */
  .foundicon-plus {
   color:#D52B2B;
