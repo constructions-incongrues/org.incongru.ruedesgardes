@@ -55,19 +55,20 @@ jQuery(document).ready(function(){
 	jQuery('.sidebar-button').click(function() {
 		
 		if(jQuery('.widget-inner').is(':visible')) {
-			jQuery('.widget-area').css('height', 'auto');
-			jQuery('#secondary .widget').fadeOut();
 			jQuery('.sidebar-button i').removeClass('foundicon-minus').addClass('foundicon-plus');
-			jQuery('.widget-inner').animate({
-				width: '0'
-			}, 300, function() { jQuery(this).fadeOut(); });
+			jQuery('.widget-inner').fadeOut().css('width', '0');
 		} else {
+			var currentBrowserWidth = jQuery( window ).width();
+			
+			if( currentBrowserWidth > 420 ) {
+				sidebarWidth = '420px';
+			} else {
+				sidebarWidth = currentBrowserWidth.toString() + 'px';
+			}
 			jQuery('.sidebar-button i').removeClass('foundicon-plus').addClass('foundicon-minus');
-			jQuery('.widget-area').css({'height':'100%'});
-			jQuery('.widget-inner').fadeIn(300, function() {
-				jQuery(this).animate({
-					width: '420px'
-				}, 300, function() {jQuery(this).find('.widget').fadeIn();});
+			jQuery('.widget-area').css('height','100%');
+			jQuery('.widget-inner, .widget').fadeIn(300, function() {
+				jQuery('.widget-inner').css('width', sidebarWidth);
 			});
 		}
 	});
@@ -85,6 +86,8 @@ jQuery(document).ready(function(){
 		transitionDuration : 400,
 		autoPlay           : true
 	});
+	
+	jQuery('table').addClass('responsive');
 
 }); 
 

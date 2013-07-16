@@ -26,6 +26,8 @@ photo by Smolskiy Eugene.
  http://tasko.us/support/discussion/tdsimple-theme/
 
 == Changelog ==
+ - v1.0.5 - theme customizer features and mobile issues fixed.
+ - v1.0.4 - added feature that makes tables responsive.
  - v1.0.1 - added feature that makes videos responsive.
  - v1.0 - Initial release.
 

@@ -5,13 +5,12 @@
  * @package tdsimple
  * @since tdsimple 1.0
  */
-?>		
+?>	
+		<div class="sidebar-button">
+			<i class="foundicon-plus"></i>
+		</div>			
 		
-		<div id="secondary" class="widget-area" role="complementary">	
-			<div class="sidebar-button">
-				<i class="foundicon-plus"></i>
-			</div>		
-			
+		<div id="secondary" class="widget-area" role="complementary">		
 			<div id="sidebar-content" class="widget-inner">
 				<?php do_action( 'tdsimple_before_sidebar' ); ?>
 				<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>

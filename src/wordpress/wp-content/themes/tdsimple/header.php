@@ -27,8 +27,35 @@
 	<?php do_action( 'tdsimple_before_header' ); ?>
 	<header id="masthead" class="site-header row" role="banner">
 		<div class="twelve columns brand">
+			<?php  
+				$tdsimple_logo = get_theme_mod( 'tdsimple_settings_logo', '' );
+				$tdsimple_logo_as_title = get_theme_mod( 'tdsimple_settings_logo_title', '' );
+				
+				if( $tdsimple_logo != '' && !$tdsimple_logo_as_title ) {
+					
+					echo '
+							<div class="website-logo">
+								<img src="'. $tdsimple_logo .'" alt="'. esc_attr( get_bloginfo( 'name', 'display' ) ) .'">
+							</div>
+					     ';
+					     
+				} else if( $tdsimple_logo != '' && $tdsimple_logo_as_title ) {
+					
+					echo '
+							<div class="website-logo">
+								<a href="'. home_url( '/' ) .'" title="'. esc_attr( get_bloginfo( 'name', 'display' ) ) .'" rel="home">
+									<img src="'. $tdsimple_logo .'" alt="'. esc_attr( get_bloginfo( 'name', 'display' ) ) .'">
+								</a>
+							</div>
+					     ';
+					     
+				} 
+			
+			?>
 			<hgroup>
+				<?php if( !$tdsimple_logo_as_title ): ?>
 				<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php endif; ?>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 		</div>
@@ -36,7 +63,7 @@
 		<div class="twelve columns">
 			
 			<nav role="navigation" class="site-navigation main-navigation">
-				<h4 class="assistive-text"><?php _e( 'Menu', 'tdblu' ); ?></h4>
+				<h4 class="assistive-text"><?php _e( 'Menu', 'tdsimple' ); ?></h4>
 				<?php if ( has_nav_menu( 'primary' ) ) { ?>
 					<?php wp_nav_menu( array( 'container' => 'ul', 'menu_class' => 'nav-bar', 'theme_location' => 'primary') ); ?>
 				<?php } else { ?>

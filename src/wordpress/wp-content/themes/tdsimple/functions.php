@@ -35,6 +35,11 @@ function tdsimple_setup() {
 	 * Custom functions that act independently of the theme templates
 	 */
 	require( get_template_directory() . '/inc/extras.php' );
+	
+	/**
+	 * Customizer additions
+	 */
+	require( get_template_directory() . '/inc/customizer.php' );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -99,9 +104,10 @@ function tdsimple_scripts() {
 		wp_enqueue_script( 'keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
 	}
 
-	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '1', true  ); 
-	wp_enqueue_script( 'fitvids-script', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '1', true  );
-	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/js/tdsimple.js', array( 'jquery' ), '1', true  );
+	wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '201301', true  ); 
+	wp_enqueue_script( 'responsive-tables-script', get_template_directory_uri() . '/js/responsive-tables.js', array( 'jquery' ), '201302', true  );
+	wp_enqueue_script( 'fitvids-script', get_template_directory_uri() . '/js/jquery.fitvids.js', array( 'jquery' ), '201301', true  );
+	wp_enqueue_script( 'theme-script', get_template_directory_uri() . '/js/tdsimple.js', array( 'jquery' ), '201301', true  );
 	
 }
 add_action( 'wp_enqueue_scripts', 'tdsimple_scripts' );
@@ -209,3 +215,59 @@ function tdsimple_add_class_to_excerpt( $excerpt ) {
     return str_replace('<p', '<p class="excerpt"', $excerpt);
 }
 add_filter( "the_excerpt", "tdsimple_add_class_to_excerpt" );
+
+/**
+*	Add custome styles that were made in Theme Customizer
+*	@since tdsimple 1.0.5
+*/
+function tdsimple_head() {
+	$tdsimple_content_width = get_theme_mod( 'tdsimple_settings_content_width', 'large' );
+	
+	if( $tdsimple_content_width == 'small' ) {
+		echo "
+				<style type='text/css'> \n
+					.row { width: auto; min-width: 0; max-width: 592px; }
+				</style>
+		     ";
+	} else if( $tdsimple_content_width == 'medium' ) {
+		echo "
+				<style type='text/css'> \n
+					.row { width: auto; min-width: 0; max-width: 768px; }
+				</style>
+		     ";
+	} else {
+		echo '';
+	}
+}
+add_action('wp_head', 'tdsimple_head');
+
+/* Admin Page that shows information about the theme */
+add_action( 'admin_menu', 'register_my_custom_menu_page' );
+function register_my_custom_menu_page(){
+    add_theme_page( 'tdSimple Theme Info', 'tdSimple Info', 'manage_options', 'theme_information', 'tdsimple_theme_page_info' ); 
+}
+
+function tdsimple_theme_page_info(){
+	$current_user = wp_get_current_user();
+    echo '
+    		<div class="wrap">
+    			<h1>tdSimple - Theme Information</h1>
+    			<br />
+    			<div style="width: 600px; border: 1px solid #dfdfdf;">
+    				<h2 style="font-weight: bold; padding: 25px 30px 10px">Hello, '.$current_user->display_name.'</h2>
+    				<p style="padding: 0 30px;">Thank You for using my Theme. I hope it\'s working well for you. By the way, do you know that I build themes very often? You can subscribe to my newsletter and I’ll keep you up-to-date with news about my themes and special deals or updates. You can find a subscribe form on my website (bottom of the page)</p>
+    				<p style="padding-left: 30px; margin-top: 25px;margin-bottom: 25px;"><a class="button button-primary" href="http://tasko.us/" target="_blank">Subscribe</a></p>
+    				<h2 style="border-top: 1px solid #dfdfdf; font-weight: bold; padding: 25px 30px 10px">Something does not work? What I have to do?</h2>
+    				<p style="padding: 0 30px;">If you have any questions, please post them on my website.</p>
+    				<p style="padding-left: 30px; margin-top: 25px;margin-bottom: 25px;"><a class="button button-primary" href="http://tasko.us/support/" target="_blank">Support</a></p>
+    				<h2 style="border-top: 1px solid #dfdfdf; font-weight: bold; padding: 25px 30px 10px">Changelog</h2>
+    				<ul style="margin-left: 45px; margin-right: 30px; list-style: disc;">
+    					<li><strong>v1.0.5</strong> - added feature that allows to upload logo and change content width. ( <em>Appearance</em> > <em>Themes</em> > <em>Customize</em> ). Fixed some mobile issues.</li>
+    					<li><strong>v1.0.4</strong> - added feature that makes tables responsive.</li>
+    					<li><strong>v1.0.1</strong> - added feature that makes videos responsive.</li>
+    					<li><strong>v1.0</strong> - Initial release.</li>
+    				</ul>
+    			</div>
+    	 	</div>
+    	 ';	
+}

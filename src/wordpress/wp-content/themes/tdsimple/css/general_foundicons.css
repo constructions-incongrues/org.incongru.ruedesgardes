@@ -19,7 +19,6 @@
   background-repeat: repeat;
 }
 
-
 [class*="foundicon-"]:before {
   font-family: "GeneralFoundicons";
   font-weight: normal;
