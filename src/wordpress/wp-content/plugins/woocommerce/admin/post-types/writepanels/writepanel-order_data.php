@@ -129,7 +129,7 @@ function woocommerce_order_data_meta_box($post) {
 					<?php if ( get_option( 'woocommerce_enable_order_comments' ) != 'no' ) : ?>
 
 						<p class="form-field form-field-wide"><label for="excerpt"><?php _e( 'Customer Note:', 'woocommerce' ) ?></label>
-						<textarea rows="1" cols="40" name="excerpt" tabindex="6" id="excerpt" placeholder="<?php esc_js(translate( 'Customer\'s notes about the order', 'woocommerce' )); ?>"><?php echo wp_kses_post( $post->post_excerpt ); ?></textarea></p>
+						<textarea rows="1" cols="40" name="excerpt" tabindex="6" id="excerpt" placeholder="<?php _e( 'Customer\'s notes about the order', 'woocommerce' ); ?>"><?php echo wp_kses_post( $post->post_excerpt ); ?></textarea></p>
 
 					<?php endif; ?>
 
@@ -346,7 +346,7 @@ function woocommerce_order_items_meta_box( $post ) {
 
 					<th class="quantity"><?php _e( 'Qty', 'woocommerce' ); ?></th>
 
-					<th class="line_cost"><?php _e( 'Cost', 'woocommerce' ); ?>&nbsp;<a class="tips" data-tip="<?php _e( 'Line subtotals are before pre-tax discounts, totals are after.', 'woocommerce' ); ?>" href="#">[?]</a></th>
+					<th class="line_cost"><?php _e( 'Totals', 'woocommerce' ); ?>&nbsp;<a class="tips" data-tip="<?php _e( 'Line subtotals are before pre-tax discounts, totals are after.', 'woocommerce' ); ?>" href="#">[?]</a></th>
 
 					<?php if ( get_option( 'woocommerce_calc_taxes' ) == 'yes' ) : ?>
 						<th class="line_tax"><?php _e( 'Tax', 'woocommerce' ); ?></th>
