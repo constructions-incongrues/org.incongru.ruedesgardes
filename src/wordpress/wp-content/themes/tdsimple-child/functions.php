@@ -37,7 +37,7 @@ add_action('wp_enqueue_scripts', function() {
 
 	wp_register_style(
 		'ruedesgardes',
-		'css/ruedesgardes.css',
+		get_stylesheet_directory_uri().'/css/ruedesgardes.css',
 		array(
 			'admin-bar',
 			'font-carrois', 
