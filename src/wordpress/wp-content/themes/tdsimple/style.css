@@ -1,10 +1,13 @@
+.page-title {display: none}
+
+
 /*
 Theme Name: tdSimple
 Theme URI: http://demo.tasko.us/tdsimple/
 Author URI: http://tasko.us/
 Author: Taras Dashkevych
-Description: tdSimple is super clean, very simple and elegant WordPress theme. It is a responsive theme that looks good on any device. Get free support on http://tasko.us/support/
-Version: 1.0.5
+Description: tdSimple is super clean, very simple and elegant WordPress theme. It's also responsive.
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: licensing/license.txt
 Tags: light, white, right-sidebar, one-column, sticky-post, featured-images, custom-menu, flexible-width, threaded-comments
@@ -201,11 +204,6 @@ input[type="submit"]:hover {
 #masthead .brand {
 	margin-top: 30px;
 	margin-bottom: 30px;
-}
-
-#masthead .website-logo {
-	margin-top: 25px;
-	margin-bottom: 35px;
 }
 
 #masthead .brand h1 a {
@@ -769,7 +767,7 @@ object {
 }
 
 #secondary .widget:before {
-    content: "";
+   content: "";
 	border-bottom: 1px solid #353535;
 	position: absolute;
 	bottom: 0;
@@ -781,7 +779,7 @@ object {
 	border-color: #68727a;
 }
 
-#secondary .widget .wp-caption {
+#secondary .widget .wp-caption  {
 	color: #eee;
 	border-color: #42494f;
 }
@@ -805,10 +803,36 @@ object {
 	max-width: 100%;
 }
 
+
+.after-post-widget {
+	background: #ffffff;
+	margin-bottom: 1.5em;
+}
+
+.after-post-widget .widget {
+	margin-bottom: 0 !important;
+}
+
 /* Search widget */
 #searchsubmit {
 	display: none;
 }
+
+.after-post-widget .widget {
+	margin: 0 0 1.5em;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 40px 60px 40px;
+	color: #222;
+}
+
+.after-post-widget .widget .widget-title {
+	margin-top: 0;
+	color: #ccc;
+}
+
+.after-post-widget .widget a:hover { color: #0086B3; }
+
+.after-post-widget .widget a { color: #09C; }
 
 /* =Archive&Search Page
 ----------------------------------------------- */
@@ -978,33 +1002,3 @@ object {
 	background: #f8f8f8;
 	color: #333333;
 }
-
-/* -----------------------------------------
-   Responsive Tables
------------------------------------------ */
-/* Foundation v2.1.4 http://foundation.zurb.com */
-/* Artfully masterminded by ZURB  */
-
-
-table th { font-weight: bold; }
-table td, table th { padding: 9px 10px; text-align: left; }
-
-/* Mobile */
-@media only screen and (max-width: 767px) {
-	
-	table.responsive { margin-bottom: 0; }
-	
-	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
-	.pinned table { border-right: none; border-left: none; width: 100%; }
-	.pinned table th, .pinned table td { white-space: nowrap; }
-	.pinned td:last-child { border-bottom: 0; }
-	
-	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
-	div.table-wrapper div.scrollable table { margin-left: 35%; }
-	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
-	
-	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
-	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
-	
-}
-
