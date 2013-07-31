@@ -8,6 +8,7 @@ Template:       tdsimple
 */
 
 /* Import styles from parent theme */
+
 @import url("../../tdsimple/css/refineslide.css");
 
 @import url("../../tdsimple/css/general_foundicons_ie7.css");
@@ -29,7 +30,7 @@ Template:       tdsimple
     font-style: normal;
 }
 
-body {background-color: #fff; background-repeat: repeat ;font-family: 'Carrois Gothic SC', sans-serif;}
+body {background-color: #fff; background-repeat: repeat ;font-family: 'Carrois Gothic SC', sans-serif;background-image: url(../img/pat10.png) ;background-repeat: repeat ;}
 
 /* header */
 #masthead {height: 200px;}
@@ -145,8 +146,8 @@ div.product .stock, .woocommerce-page div.product .stock, .woocommerce #content 
     margin-left: -10px;
     margin-top:20px;
 }
-.main-navigation ul {top:40px;}
-.nav-bar > li > a:first-child {padding:0 10px;left: -8px;}
+.main-navigation ul {margin-top:-45px;}
+.nav-bar > li > a:first-child {padding:0 10px;}
 .nav-bar li a {
     color: #000;
     background-color: #FFF;
@@ -168,7 +169,7 @@ li.product h3  {color:#000;font-weight: lighter;}
 
 /* woocomerce */
 
-a.add_to_cart_button.button.product_type_simple,.woocommerce-page a.button.alt,.woocommerce button.button.alt,.woocommerce-page button.button.alt,.woocommerce input.button.alt,.woocommerce-page input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce-page #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page #content input.button.alt {
+a.add_to_cart_button.button.product_type_simple,.woocommerce-page a.button.alt,.woocommerce button.button.alt,.woocommerce-page button.button.alt,.woocommerce input.button.alt,.woocommerce-page input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce-page #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page #content input.button.alt, input#submit-comment {
     background: #D52B2B;
     background: -webkit-gradient(linear,left top,left bottom,from(#D52B2B),to(#D52B2B));
     background: -webkit-linear-gradient(#D52B2B,#D52B2B);
@@ -178,7 +179,7 @@ a.add_to_cart_button.button.product_type_simple,.woocommerce-page a.button.alt,.
     color: #fff!important;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.6) }
  
-input#submit-comment:hover,a.button:hover,.woocommerce a.button.alt:hover,.woocommerce-page a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce-page button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce-page input.button.alt:hover,.woocommerce #respond input#submit.alt:hover,.woocommerce-page #respond input#submit.alt:hover,.woocommerce #content input.button.alt:hover,.woocommerce-page #content input.button.alt:hover {
+input#submit-comment:hover,a.button:hover,.woocommerce a.button.alt:hover,.woocommerce-page a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce-page button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce-page input.button.alt:hover,.woocommerce #respond input#submit.alt:hover,.woocommerce-page #respond input#submit.alt:hover,.woocommerce #content input.button.alt:hover,.woocommerce-page #content input.button.alt:hover, input#submit-comment:hover {
     background: #000;
     background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
     background: -webkit-linear-gradient(#000,#000);
