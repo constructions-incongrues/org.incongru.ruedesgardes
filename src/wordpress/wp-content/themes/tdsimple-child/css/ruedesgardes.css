@@ -80,7 +80,7 @@ text-transform: lowercase;}
 .site-info p {font-size: 0.9em;line-height: 0px;color: #888}
 .site-info p a {    color: #777;border-bottom: 1px dotted #999}
 .site-info p a:hover {border-bottom: 1px dotted #000;color:#000;}
-.stock {color:#000;}
+.stock {color:#000;text-decoration: underline;}
 div#content a {color:#d52b2b;}
 div#content a:hover {border-bottom: 1px dotted #D52b2b;}
 .main-navigation {
@@ -227,4 +227,4 @@ table.variations.responsive {background-color: transparent!important;}
 }
 /* HACK CRADE */
 
-form.cart {visibility: hidden;}
+form.cart {display: none;}
