@@ -227,4 +227,4 @@ table.variations.responsive {background-color: transparent!important;}
 }
 /* HACK CRADE */
 
-form.cart {display: none;}
+form.cart, #menu-item-126 {display: none;}
