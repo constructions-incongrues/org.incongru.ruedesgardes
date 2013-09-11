@@ -38,7 +38,7 @@ body {background-color: #fff; background-repeat: repeat ;font-family: 'Carrois G
 #masthead .brand h1 a {color:#FFF;background-color: #000;padding:4px 8px 0px 8px;}
 #masthead .brand h1 a:hover {color:#000;background-color: #FFF ;}
 .header-content {width:960px;text-align: left;margin:0 auto;}
-header {background-image: url(../img/pat8.png) ;background-repeat: repeat ;border-bottom: 5px solid #000;}
+header {background-image: url(../img/pat11.png) ;background-repeat: repeat ;border-bottom: 5px solid #000;}
 
 /* content */
 
@@ -196,7 +196,9 @@ a.shipping-calculator-button {font-size: 1em;}
 div.cart_totals h2 {font-size: 2.5em;}
 div#customer_details.col2-set h3 {font-size: 1.5em;}
 .woocommerce table.cart a.remove:hover,.woocommerce-page table.cart a.remove:hover,.woocommerce #content table.cart a.remove:hover,.woocommerce-page #content table.cart a.remove:hover { background-color:#000;color: #fff }
-
+.woocommerce-message, .woocommerce-error, .woocommerce-info {background-color: #FFF;}
+table.variations.responsive {background-color: transparent!important;}
+.shipping {background-color: #FFF!important}
  /* autres */
  .foundicon-plus {
   color:#D52B2B;

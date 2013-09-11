@@ -10,6 +10,7 @@
 _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.0', null, sprintf( __('Please include a %1$s template in your theme.'), basename(__FILE__) ) );
 ?>
 	<div id="sidebar" role="complementary">
+		
 		<ul>
 			<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
