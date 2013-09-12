@@ -1730,3 +1730,4 @@ function woocommerce_save_address() {
 }
 
 add_action( 'template_redirect', 'woocommerce_save_address' );
+
