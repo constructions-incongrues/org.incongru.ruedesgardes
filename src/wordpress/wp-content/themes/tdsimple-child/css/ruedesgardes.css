@@ -228,3 +228,4 @@ table.variations.responsive {background-color: transparent!important;}
 /* HACK CRADE */
 
 form.cart, #menu-item-126 {display: none;}
+.woocommerce div.product div.images img, .woocommerce-page div.product div.images img, .woocommerce #content div.product div.images img, .woocommerce-page #content div.product div.images img {margin-bottom: 10px!important}

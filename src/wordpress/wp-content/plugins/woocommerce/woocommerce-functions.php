@@ -1732,3 +1732,5 @@ function woocommerce_save_address() {
 add_action( 'template_redirect', 'woocommerce_save_address' );
 //NUMBER OF PRODICTS TO DISPLAY ON SHOP PAGE
 add_filter('loop_shop_per_page', create_function('$cols', 'return 100;'));
+
+//TEST 
