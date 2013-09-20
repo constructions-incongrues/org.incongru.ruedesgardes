@@ -8,7 +8,7 @@
  */
 ?>
 <h1>Trier</h1>
-<ul>
+<ul class="woocommerce-tag-list">
   <li><a href="<?php echo get_option("siteurl") ?>">Tout</a></li>
 <?php foreach (get_terms('product_tag') as $term): ?>
   <li>
