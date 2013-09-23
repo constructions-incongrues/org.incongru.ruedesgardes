@@ -209,14 +209,14 @@ table.variations.responsive {background-color: transparent!important;}
     top:0px;
     list-style:none;
     }
-    ul.woocommerce-tag-list {margin-bottom: 60px;}
+
 .woocommerce-tag-list li, .woocommerce-tag-list a{
     float:left;
     height:24px;
     line-height:24px;
     position:relative;
     font-size:1em;
-    }
+    margin: 3px 0 3px 0}
 
 .woocommerce-tag-list a{
     margin-left:20px;
@@ -243,7 +243,6 @@ table.variations.responsive {background-color: transparent!important;}
     border-color:transparent #D52B2B transparent transparent;
     border-style:solid;
     border-width:12px 12px 12px 0;      
-    ba
     }
 
 .woocommerce-tag-list a:after{
@@ -262,6 +261,15 @@ table.variations.responsive {background-color: transparent!important;}
     -webkit-box-shadow:-1px -1px 2px #004977;
     box-shadow:-1px -1px 2px #004977;
     }
+
+/* Changement de couleur quand le tag est actif */
+.woocommerce-tag-list li.actif a {background:#000;}
+.woocommerce-tag-list li.actif a:before{border-color:transparent #000 transparent transparent;}
+
+
+.woocommerce-tag-list li:hover a {background:#000;}
+.woocommerce-tag-list li:hover a:before{border-color:transparent #000 transparent transparent;}
+
  /* autres */
  .foundicon-plus {
   color:#D52B2B;

@@ -17,5 +17,6 @@
 <?php endforeach ?>
 </ul>
 
-<h1>Catalogue</h1>
+<hr style="border:none;"/>
+<h1 style="margin-top:40px;">Catalogue</h1>
 <ul class="products">
