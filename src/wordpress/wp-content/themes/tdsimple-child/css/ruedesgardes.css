@@ -31,11 +31,16 @@ Template:       tdsimple
     font-style: normal;
 }
 
-body {background-color: #fff; background-repeat: repeat ;font-family: 'Carrois Gothic SC', sans-serif;background-image: url(../img/pat10.png) ;background-repeat: repeat ;}
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+
+body {background-color: #fff; background-repeat: repeat ;font-family: 'PT Sans Narrow', sans-serif;background-image: url(../img/pat10.png) ;background-repeat: repeat ;}
 
 /* header */
-#masthead {height: 200px;}
-#masthead .brand h1 { margin-: 0px 0px 0px -10px; font-size: 4em;}
+#masthead {height: 199px;}
+#masthead .brand h1 { margin: 0px 0px 0px -10px; font-size: 3.8em;}
 #masthead .brand h1 a {color:#FFF;background-color: #000;padding:4px 8px 0px 8px;}
 #masthead .brand h1 a:hover {color:#000;background-color: #FFF ;}
 .header-content {width:960px;text-align: left;margin:0 auto;}
@@ -54,9 +59,11 @@ h2.site-description { font-weight: bold; font-size: 3.2em;
     color: #777;
 }
 
-p,ul,h1.product_title,h3 {
-font-family: 'Carrois Gothic SC', sans-serif;
-text-transform: lowercase;}
+p,.product-meta span {text-transform:lowercase;font-size: 0.8em;text-transform: capitalize;}
+ul,h1.product_title,h3 {
+font-family: 'PT Sans Narrow', sans-serif;
+text-transform:lowercase;
+}
 
 /* Hide some elements */
 
@@ -77,7 +84,7 @@ text-transform: lowercase;}
 /* Perform some adjustments */
 
 .site-info {text-align: left;margin-left: -18px;text-transform: lowercase;}
-.site-info p {font-size: 0.9em;line-height: 0px;color: #888}
+.site-info p {font-size: 0.9em;text-transform:capitalize;line-height: 6px;color: #888}
 .site-info p a {    color: #777;border-bottom: 1px dotted #999}
 .site-info p a:hover {border-bottom: 1px dotted #000;color:#000;}
 .stock {color:#000;text-decoration: underline;}
@@ -97,9 +104,10 @@ div#content a:hover {border-bottom: 1px dotted #D52b2b;}
     margin-bottom: 0;
 }
 
-h1 {font-size: 1.8em;}
+h1 {font-size: 1.8em;letter-spacing: 4px;color:#282828;  text-shadow: 0px 1px 0px #DDD;font-family: 'TrumpGothicEastRegular', sans-serif;font-weight: lighter!important;}
 h1.product_title {
     font-size: 1.1em;
+    text-transform: capitalize;
 }
 
 h2.site-description {
@@ -123,7 +131,10 @@ div.brand {
     width: 100%;
 }
 div.images {margin-left: -32px ;}
-.wp-post-image,ul.products li.product a img {border:1px solid #000;box-shadow: none;}
+/*.wp-post-image,ul.products li.product a img {border:1px solid #CCC;box-shadow: none;}
+*/
+.woocommerce-page ul.products li.product a:hover img {opacity: 0.8;}
+#comments {display: none}
 
 /* Paint new elements */
 .summary .contact {
@@ -137,7 +148,7 @@ hr.narrow {
     padding-top: 5px;
 }
 
-.price,.amount {color: #d52b2b!important;}
+.price,.amount {color: #d52b2b!important;font-size: 0.9em;font-weight: bold;}
 div.product .stock, .woocommerce-page div.product .stock, .woocommerce #content div.product .stock, .woocommerce-page #content div.product .stock  {color:#000;}
 
 .nav-bar {
@@ -161,7 +172,6 @@ div.product .stock, .woocommerce-page div.product .stock, .woocommerce #content 
     background-color: #000;
 }
 li.product h3  {color:#000;font-weight: lighter;}
-
 /* bandcamp */
 
 #maintext, #subtext, #linkarea{visibility:hidden;}
@@ -199,6 +209,7 @@ div#customer_details.col2-set h3 {font-size: 1.5em;}
 table.variations.responsive {background-color: transparent!important;}
 .shipping {background-color: #FFF!important}
 
+ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-top:15px;font-size: 0.8em;padding:0px;line-height: 16px;letter-spacing:0px;text-transform: capitalize;}
 /* Peinture sur les tags */
 .woocommerce-tag-list {
     margin:0;
@@ -215,8 +226,9 @@ table.variations.responsive {background-color: transparent!important;}
     height:24px;
     line-height:24px;
     position:relative;
-    font-size:1em;
-    margin: 3px 0 3px 0}
+    font-size:0.9em;
+    margin: 3px 0 3px 0;
+    text-transform: capitalize;}
 
 .woocommerce-tag-list a{
     margin-left:20px;
@@ -224,7 +236,7 @@ table.variations.responsive {background-color: transparent!important;}
     background:#D52B2B;
     color:#fff!important;
     text-decoration:none;
-    -moz-border-radius-bottomright:4px;
+    -moz-border-radius-bottom-right:4px;
     -webkit-border-bottom-right-radius:4px; 
     border-bottom-right-radius:4px;
     -moz-border-radius-topright:4px;
@@ -257,9 +269,7 @@ table.variations.responsive {background-color: transparent!important;}
     -webkit-border-radius:2px;
     border-radius:2px;
     background:#fff;
-    -moz-box-shadow:-1px -1px 2px #004977;
-    -webkit-box-shadow:-1px -1px 2px #004977;
-    box-shadow:-1px -1px 2px #004977;
+
     }
 
 /* Changement de couleur quand le tag est actif */
@@ -298,4 +308,4 @@ table.variations.responsive {background-color: transparent!important;}
 
 form.cart, #menu-item-126 {display: none;}
 .woocommerce div.product div.images img, .woocommerce-page div.product div.images img, .woocommerce #content div.product div.images img, .woocommerce-page #content div.product div.images img {margin-bottom: 10px!important}
-.sku_wrapper {display:none:;}
+.sku_wrapper {display:none;}
