@@ -5,7 +5,7 @@ Theme URI:      http://github.com/constructions-incongrues/org.incongru.ruedesga
 Description:    Theme of the http://ruedesgardes.incongru.org website
 Author:         Constructions Incongrues
 Author URI:     http://github.com/constructions-incongrues
-Template:       tdsimple                             
+Template:       tdsimple
 */
 
 /* Import styles from parent theme */
@@ -54,10 +54,7 @@ header {background-image: url(../img/pat11.png) ;background-repeat: repeat ;bord
 
 h1, h2, h3, h4, h5, h6, .entry-title a, .site-content .site-navigation a,.wp-caption {font-family: 'TrumpGothicEastRegular', Helvetica, Arial, sans-serif;text-transform: uppercase;font-size: 2em;letter-spacing: 3px;position:relative;}
 
-h2.site-description { font-weight: bold; font-size: 3.2em;
-    margin-top: 20px;margin-left: -8px;
-    color: #777;
-}
+h2.site-description {display: none;}
 
 p,.product-meta span {text-transform:lowercase;font-size: 0.8em;text-transform: capitalize;}
 ul,h1.product_title,h3 {
@@ -67,16 +64,16 @@ text-transform:lowercase;
 
 /* Hide some elements */
 
-.add_to_cart_button, 
-.button.product_type_variable, 
+.add_to_cart_button,
+.button.product_type_variable,
 .outofstock .button,
-.page-title, 
+.page-title,
 .posted_in,
 .related.products,
 .type-page .entry-header,
 .woocommerce-breadcrumb,
-.woocommerce-ordering, 
-.woocommerce-result-count, 
+.woocommerce-ordering,
+.woocommerce-result-count,
 .woocommerce-tabs {
     display: none ;
 }
@@ -194,7 +191,7 @@ a.add_to_cart_button.button.product_type_simple,.woocommerce-page a.button.alt,.
     border-color: #76456c;
     color: #fff!important;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.6) }
- 
+
 input#submit-comment:hover,a.button:hover,.woocommerce a.button.alt:hover,.woocommerce-page a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce-page button.button.alt:hover,.woocommerce input.button.alt:hover,.woocommerce-page input.button.alt:hover,.woocommerce #respond input#submit.alt:hover,.woocommerce-page #respond input#submit.alt:hover,.woocommerce #content input.button.alt:hover,.woocommerce-page #content input.button.alt:hover, input#submit-comment:hover {
     background: #000;
     background: -webkit-gradient(linear,left top,left bottom,from(#000),to(#000));
@@ -241,12 +238,12 @@ ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-t
     color:#fff!important;
     text-decoration:none;
     -moz-border-radius-bottom-right:4px;
-    -webkit-border-bottom-right-radius:4px; 
+    -webkit-border-bottom-right-radius:4px;
     border-bottom-right-radius:4px;
     -moz-border-radius-topright:4px;
-    -webkit-border-top-right-radius:4px;    
-    border-top-right-radius:4px;    
-    } 
+    -webkit-border-top-right-radius:4px;
+    border-top-right-radius:4px;
+    }
 
 .woocommerce-tag-list a:before{
     content:"";
@@ -258,7 +255,7 @@ ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-t
     height:0;
     border-color:transparent #D52B2B transparent transparent;
     border-style:solid;
-    border-width:12px 12px 12px 0;      
+    border-width:12px 12px 12px 0;
     }
 
 .woocommerce-tag-list a:after{
@@ -312,4 +309,4 @@ ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-t
 
 form.cart, #menu-item-126 {display: none;}
 .woocommerce div.product div.images img, .woocommerce-page div.product div.images img, .woocommerce #content div.product div.images img, .woocommerce-page #content div.product div.images img {margin-bottom: 10px!important}
-.sku_wrapper {display:none;}
+.sku_wrapper {display: none;}
