@@ -182,6 +182,7 @@ li.product h3  {color:#000;font-weight: lighter;}
 
 /* woocomerce */
 .entry-content {line-height: 24px;}
+.entry-content p {font-size: 16px;}
 a.add_to_cart_button.button.product_type_simple,.woocommerce-page a.button.alt,.woocommerce button.button.alt,.woocommerce-page button.button.alt,.woocommerce input.button.alt,.woocommerce-page input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce-page #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page #content input.button.alt, input#submit-comment {
     background: #D52B2B;
     background: -webkit-gradient(linear,left top,left bottom,from(#D52B2B),to(#D52B2B));
