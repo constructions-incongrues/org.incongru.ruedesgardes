@@ -47,7 +47,7 @@ function wp_bandcamp_default_atts()
 {
 	return array(
 		'type' => 'album',
-		'bgcol' => '#FFFFFF',
+		'bgcol' => 'transparent',
 		'linkcol' => '#4285BB',
 		'size' => 'grande',
 		'width' => 300,
@@ -100,7 +100,7 @@ function wp_bandcamp_player_dimensions ( $size = null )
 
 
 /**
- * Player Embedding Helpers 
+ * Player Embedding Helpers
  */
 function wp_bandcamp_build_movie_url ( $atts )
 {
