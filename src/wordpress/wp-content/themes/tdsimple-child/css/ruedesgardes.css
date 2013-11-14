@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, .entry-title a, .site-content .site-navigation a,.wp-cap
 
 h2.site-description {display: none;}
 
-p,.product-meta span {text-transform:lowercase;font-size: 0.8em;text-transform: capitalize;}
+p,.product-meta span {text-transform:lowercase;font-size: 0.8em;text-transform: none;}
 ul,h1.product_title,h3 {
 font-family: 'PT Sans Narrow', sans-serif;
 text-transform:lowercase;
@@ -309,4 +309,28 @@ ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-t
 
 form.cart, #menu-item-126 {display: none;}
 .woocommerce div.product div.images img, .woocommerce-page div.product div.images img, .woocommerce #content div.product div.images img, .woocommerce-page #content div.product div.images img {margin-bottom: 10px!important}
-.sidebar-button, .sku_wrapper {display: none;}
+.sidebar-button, .sku_wrapper,.entry-meta.bottom  {display: none;}
+
+/* BLOG */
+.entry-header {
+background-image: none;
+border-bottom:0px;
+margin-bottom: -200px!important;
+display: inline-block;
+}
+.entry-header .byline {display: none;}
+.entry-header .entry-date a {color:#000;}
+.entry-header .entry-date {font-size: 0.8em;margin-top: -15px!important;display: none;}
+.entry-header h2,.entry-title h2 {
+    font-size: 2em;
+letter-spacing: 4px;
+color: #000!important;
+text-shadow: 1px 2px 0px #ccc;
+font-family: 'TrumpGothicEastRegular', sans-serif;
+font-weight: lighter!important;
+}
+.entry-meta {text-align: left; }
+.entry-title {text-align: left;margin-bottom: 0px}
+.entry-title h2 a {color:#000!important;}
+.entry-meta.top {margin-bottom: 10px;}
+.hentry {padding: 0px}
