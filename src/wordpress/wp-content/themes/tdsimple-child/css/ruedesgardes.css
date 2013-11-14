@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6, .entry-title a, .site-content .site-navigation a,.wp-cap
 
 h2.site-description {display: none;}
 
-p,.product-meta span {text-transform:lowercase;font-size: 0.8em;text-transform: none;}
+p,.product-meta span {text-transform:lowercase;font-size: 0.8em;text-transform: none;line-height: 22px!important}
 ul,h1.product_title,h3 {
 font-family: 'PT Sans Narrow', sans-serif;
 text-transform:lowercase;
