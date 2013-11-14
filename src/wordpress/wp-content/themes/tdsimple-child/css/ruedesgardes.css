@@ -101,7 +101,7 @@ div#content a:hover {border-bottom: 1px dotted #D52b2b;}
     margin-bottom: 0;
 }
 
-h1 {font-size: 1.8em;letter-spacing: 4px;color:#282828;  text-shadow: 1px 2px 0px #ccc;font-family: 'TrumpGothicEastRegular', sans-serif;font-weight: lighter!important;}
+h1 {font-size: 2em;letter-spacing: 4px;color:#282828;  text-shadow: 1px 2px 0px #ccc;font-family: 'TrumpGothicEastRegular', sans-serif;font-weight: lighter!important;}
 h1.product_title {
     font-size: 1.1em;
     text-transform: capitalize;
