@@ -309,4 +309,4 @@ ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-t
 
 form.cart, #menu-item-126 {display: none;}
 .woocommerce div.product div.images img, .woocommerce-page div.product div.images img, .woocommerce #content div.product div.images img, .woocommerce-page #content div.product div.images img {margin-bottom: 10px!important}
-.sku_wrapper {display: none;}
+.sidebar-button, .sku_wrapper {display: none;}
