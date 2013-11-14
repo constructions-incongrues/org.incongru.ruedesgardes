@@ -321,16 +321,19 @@ display: inline-block;
 .entry-header .byline {display: none;}
 .entry-header .entry-date a {color:#000;}
 .entry-header .entry-date {font-size: 0.8em;margin-top: -15px!important;display: none;}
-.entry-header h2,.entry-title h2 {
-    font-size: 2em;
+.entry-header h2,.entry-header h2 a {
+    font-size: 1.8em;
 letter-spacing: 4px;
 color: #000!important;
 text-shadow: 1px 2px 0px #ccc;
 font-family: 'TrumpGothicEastRegular', sans-serif;
 font-weight: lighter!important;
 }
+.entry-header h2 a {font-size: 1.2em!important}
 .entry-meta {text-align: left; }
 .entry-title {text-align: left;margin-bottom: 0px}
 .entry-title h2 a {color:#000!important;}
 .entry-meta.top {margin-bottom: 10px;}
 .hentry {padding: 0px}
+.entry-content {border-bottom: 1px dotted #bbb;margin:0 0 -50px 0;}
+.div .post-thumb {display: none;}
