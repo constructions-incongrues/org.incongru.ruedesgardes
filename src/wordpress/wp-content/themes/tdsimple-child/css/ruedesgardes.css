@@ -323,7 +323,7 @@ display: inline-block;
 .entry-header .entry-date a {color:#000;}
 .entry-header .entry-date {font-size: 0.8em;margin-top: -15px!important;display: none;}
 .entry-header h2,.entry-header h2 a {
-    font-size: 1.8em;
+    font-size: 2em;
 letter-spacing: 4px;
 color: #000!important;
 text-shadow: 1px 2px 0px #ccc;

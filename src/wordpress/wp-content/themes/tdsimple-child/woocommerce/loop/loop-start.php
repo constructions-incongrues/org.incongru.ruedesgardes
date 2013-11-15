@@ -7,7 +7,7 @@
  * @version     2.0.0
  */
 ?>
-<h1>Trier</h1>
+<h1 class="woocommerce-heading-1">Trier</h1>
 <ul class="woocommerce-tag-list">
   <li><a href="<?php echo get_option("siteurl/distro/stock/") ?>">Tout</a></li>
 <?php foreach (get_terms('product_tag') as $term): ?>
@@ -18,5 +18,5 @@
 </ul>
 
 <hr style="border:none;"/>
-<h1 style="margin-top:40px;">Catalogue</h1>
+<h1 style="margin-top:60px;">Catalogue</h1>
 <ul class="products">
