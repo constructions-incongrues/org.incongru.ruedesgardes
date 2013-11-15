@@ -181,7 +181,7 @@ li.product h3  {color:#000;font-weight: lighter;}
 .add_to_cart_button, .product_type_variable {display: none!important;}
 
 /* woocomerce */
-.entry-content {line-height: 24px;}
+.entry-content {line-height: 24px;margin-left: -18px!important}
 .entry-content p {font-size: 16px;}
 a.add_to_cart_button.button.product_type_simple,.woocommerce-page a.button.alt,.woocommerce button.button.alt,.woocommerce-page button.button.alt,.woocommerce input.button.alt,.woocommerce-page input.button.alt,.woocommerce #respond input#submit.alt,.woocommerce-page #respond input#submit.alt,.woocommerce #content input.button.alt,.woocommerce-page #content input.button.alt, input#submit-comment {
     background: #D52B2B;
@@ -295,14 +295,10 @@ ul.products li.product h3, .woocommerce-page ul.products li.product h3 {margin-t
     cursor: pointer;
     background: #FFF;
     color: #000;
-    border-bottom: 1px solid #e5e5e5;
     text-align: center;
     position: relative;
-    left: -6px;
-    top: 40px;
-    margin-bottom: -20px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    top: -20px;
+
     width: 100%;
     display: inline;
 }
@@ -329,7 +325,7 @@ color: #000!important;
 text-shadow: 1px 2px 0px #ccc;
 font-family: 'TrumpGothicEastRegular', sans-serif;
 font-weight: lighter!important;
-}
+margin-left: -10px!important}
 .entry-header h2 a {font-size: 1.2em!important}
 .entry-meta {text-align: left; }
 .entry-title {text-align: left;margin-bottom: 0px}
