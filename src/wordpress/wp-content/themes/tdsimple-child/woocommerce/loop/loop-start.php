@@ -22,7 +22,9 @@ $mainCategories = array(
     <li><a href="<?php echo get_option("siteurl/distro/stock/") ?>">Tout</a></li>
 <?php foreach ($mainCategories as $name => $label): ?>
     <li>
-        <a href="<?php echo get_option("siteurl/distro/stock/product-tag/<?php echo $name ?>") ?>"><?php echo $label ?></a>
+        <a href="<?php echo get_option("siteurl") ?>/product-tag/<?php echo $name ?>">
+            <?php echo $label ?>
+        </a>
     </li>
 <?php endforeach; ?>
 </ul>
@@ -33,7 +35,7 @@ $mainCategories = array(
 
 <ul class="woocommerce-tag-list">
 <?php foreach (get_terms('product_tag') as $term): ?>
-    <?php if (!in_array($term, array_keys($mainCategories))): ?>
+    <?php if (!in_array($term->name, array_keys($mainCategories))): ?>
     <li>
         <a href="<?php echo get_term_link($term, 'product_tag') ?>"><?php echo $term->name ?></a>
     </li>
