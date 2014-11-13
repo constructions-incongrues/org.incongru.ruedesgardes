@@ -1,4 +1,4 @@
-var d = Date.now();
+
 
 function doAjaxImport(formData)
 {
@@ -10,21 +10,31 @@ function doAjaxImport(formData)
 		success: function(data)
 		{ 
 			console.log(data);
-			if (data != 'done')
-			{
-				var newFormData = jQuery.parseJSON(data);
-				jQuery('#import_log').prepend('<p> row: ' + newFormData.currentrow + ' / ' + newFormData.rows + '</p>');
+			var newFormData = JSON.parse(data);
+			console.log(newFormData);
+			if (newFormData.done !=1)
+			{								
+				if (newFormData.log && newFormData.log.length > 0) {
+					jQuery.each(newFormData.log, function( index, value ) {
+						jQuery('#import_log').prepend('<p> '+value+' </p>');
+					});
+				}
 				doAjaxImport(newFormData);
 			}
 			else
 			{
-				jQuery('#import_log').prepend('<p>Done!</p>');
+				if (newFormData.log && newFormData.log.length > 0) {
+					jQuery.each(newFormData.log, function( index, value ) {
+						jQuery('#import_log').prepend('<p> '+value+' </p>');
+					});
+				}
+				jQuery('#import_log').prepend('<p><h2>'+strings.done+'</h2></p>');
 			}
 		},
 		error: function(data)
 		{
 		console.log(data);
-			alert('something went wrong');
+			alert(strings.error);
 		}
 	});
 }
@@ -38,7 +48,7 @@ jQuery(document).ready(function()
 			scrollTop: 0
 		}, 'slow');
 		jQuery('#importPreview').slideUp();
-		jQuery('#import_log').prepend('<p>Starting.....</p>');
+		jQuery('#import_log').prepend('<p>'+strings.start+'</p>');
 		var formData = jQuery(this).serialize();
 		doAjaxImport(formData);
 		e.preventDefault();
