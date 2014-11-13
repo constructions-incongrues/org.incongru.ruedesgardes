@@ -20,6 +20,8 @@ EOT;
     echo sprintf($html, $name, $email, $_SERVER['REQUEST_URI'], $email);
 });
 
+add_filter('loop_shop_per_page', function ($cols) { return 250; }, 20);
+
 add_action('wp_enqueue_scripts', function () {
     // Register fonts stylesheets
     wp_register_style(
