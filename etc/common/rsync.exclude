@@ -10,3 +10,4 @@
 /src/wordpress/wp-content/upgrade
 /src/wordpress/wp-content/plugins/woocommerce/logs/*
 /etc
+/.vagrant

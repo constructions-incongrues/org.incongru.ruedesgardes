@@ -19,3 +19,6 @@
 # dist
 /src/wordpress/wp-config.php
 /src/wordpress/.htaccess
+
+# vagrant
+/.vagrant
